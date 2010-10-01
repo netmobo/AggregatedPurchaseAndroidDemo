@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:orientation="vertical">
+			<TextView android:layout_width="wrap_content"
+			android:textSize="20sp" android:layout_height="wrap_content"
+			android:text="Recharge by Credit Card"/>
+		<View android:layout_height="20dip" android:layout_width="wrap_content"></View>
+		
+		<TextView android:layout_width="fill_parent"
+			android:textSize="12sp" android:layout_height="wrap_content"
+			android:text="This is just a demo. Use one of the dummy credit card numbers below for the transaction." />
+		<TextView android:layout_width="fill_parent" android:id="@+id/cc_dummy_ccnumbers"
+			android:textSize="12sp" android:layout_height="wrap_content"
+			android:text="xxxx-xxxx-xxxx-xxxx" />
+		<View android:layout_height="20dip" android:layout_width="wrap_content"></View>
+		
+		<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_height="fill_parent" android:layout_width="fill_parent">
+		<TableRow>		
+		<TextView android:text="Amount" android:textSize="12dip" android:width="120px" />
+		<EditText android:id="@+id/cc_amount" android:width="180px" android:singleLine="true"/>
+		</TableRow>
+		<TableRow>
+		<TextView android:text="Credit Card Type" android:textSize="12dip" android:width="120px" />
+		<Spinner android:id="@+id/cc_type" android:width="180px"/>
+		</TableRow>
+		<TableRow>			
+		<TextView android:text="Credit Card Number" android:textSize="12dip" android:width="120px" />
+		<EditText android:id="@+id/cc_creditcardnumber" android:width="180px" android:singleLine="true"/>
+		</TableRow>
+		<TableRow>	
+		<TextView android:text="Credit Card Expiration" android:textSize="12dip" android:width="120px" />
+		<Spinner android:id="@+id/cc_expiration_month" android:width="75px" />
+		</TableRow>
+		<TableRow>	
+		<TextView android:text="" android:textSize="12dip" android:width="120px" />
+		<Spinner android:id="@+id/cc_expiration_year" android:width="75px" />
+		</TableRow>
+		<TableRow>
+		<TextView android:text="CVV" android:textSize="12dip" android:width="120px" />
+		<EditText android:id="@+id/cc_cvv" android:width="180px" android:singleLine="true"/>
+		</TableRow>
+		<TableRow>
+		<TextView android:text="Email" android:textSize="12dip" android:width="120px" />
+		<EditText android:id="@+id/cc_email" android:width="180px" android:singleLine="true"/>
+		</TableRow>
+		<TableRow>
+		<TextView android:text="First Name" android:textSize="12dip" android:width="120px" />
+		<EditText android:id="@+id/cc_firstname" android:width="180px" android:singleLine="true"/>
+		</TableRow>
+		<TableRow>
+		<TextView android:text="Last Name" android:textSize="12dip" android:width="120px" />
+		<EditText android:id="@+id/cc_lastname" android:width="180px" android:singleLine="true"/>
+		</TableRow>
+		<TableRow>
+		<TextView android:text="Phone" android:textSize="12dip" android:width="120px" />
+		<EditText android:id="@+id/cc_phone" android:width="180px" android:singleLine="true"/>
+		</TableRow>
+		<TableRow>
+		<TextView android:text="Street" android:textSize="12dip" android:width="120px" />
+		<EditText android:id="@+id/cc_street" android:width="180px" android:singleLine="true"/>
+		</TableRow>
+		<TableRow>
+		<TextView android:text="City" android:textSize="12dip" android:width="120px" />
+		<EditText android:id="@+id/cc_city" android:width="180px" android:singleLine="true"/>
+		</TableRow>
+		<TableRow>
+		<TextView android:text="Country" android:textSize="12dip" android:width="120px" />
+		<Spinner android:id="@+id/cc_country" android:width="180px" android:singleLine="true"/>
+		</TableRow>
+		<TableRow>
+		<TextView android:text="State" android:textSize="12dip" android:width="120px" />
+		<EditText android:id="@+id/cc_state" android:width="180px" android:singleLine="true"/>
+		</TableRow>
+		<TableRow>
+		<TextView android:text="Zip Code" android:textSize="12dip" android:width="120px" />
+		<EditText android:id="@+id/cc_zipcode" android:width="180px" android:singleLine="true"/>
+		</TableRow>
+		<LinearLayout android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:layout_marginLeft="5dip"
+			android:layout_marginRight="5dip">
+			<Button android:text="&#60;&#60;Cancel" android:id="@+id/cc_cancel_button"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+			<Button android:text="Submit" android:id="@+id/cc_submit_button"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+		</LinearLayout>
+		</TableLayout>
+	</LinearLayout>
+</ScrollView>

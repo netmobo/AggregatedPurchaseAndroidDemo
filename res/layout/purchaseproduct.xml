@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+		android:id="@+id/LinearLayout01"
+		android:orientation="vertical"
+		android:layout_width="fill_parent" 
+		android:layout_height="fill_parent"
+		android:padding="5dp">
+		
+	<LinearLayout android:layout_width="fill_parent" 
+			android:layout_height="wrap_content" 
+			android:orientation="horizontal">
+							
+		<TextView android:text="Account Balance:" 
+				android:id="@+id/TextView01" 
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content"/>
+				
+		<TextView android:id="@+id/purchase.text.balance" 
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content"/>
+	</LinearLayout>
+	
+	<LinearLayout android:layout_width="fill_parent" 
+			android:layout_height="wrap_content"
+			android:paddingTop="20dip" 
+			android:orientation="horizontal">
+		<TextView android:text="Plug-ins:" 
+				android:id="@+id/TextView03" 
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content"/>
+	</LinearLayout>
+	
+	<ListView android:id="@+id/purchaseproduct.listview"
+		xmlns:android="http://schemas.android.com/apk/res/android" 
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:paddingTop="10dip"/>
+</LinearLayout>

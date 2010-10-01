@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:orientation="vertical">
+		<TextView android:layout_width="wrap_content"
+			android:textSize="12sp" android:layout_height="wrap_content"
+			android:text="This demo shows how you can add aggregated payments to your app with a prepaid account. In this demo app, additional features can be added as plug-ins. Each plugin is available as a separate purchase that gets deducted from an initial prepaid balance." />
+		<View android:layout_height="20dip" android:layout_width="wrap_content"></View>
+		
+		<TextView android:layout_width="wrap_content"
+			android:textSize="12sp" android:textStyle="italic" android:layout_height="wrap_content"
+			android:text="Payments are made in a sandbox, with dummy payment accounts." />
+		<View android:layout_height="20dip" android:layout_width="wrap_content"></View>
+		
+		<TextView android:text="Username" android:textColor="#FFF"
+			android:textSize="18dip" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_marginLeft="5dip"
+			android:layout_marginRight="5dip" />
+		<EditText android:id="@+id/username" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:layout_marginLeft="5dip"
+			android:layout_marginRight="5dip" android:singleLine="true"/>
+		<TextView android:text="Password" android:textColor="#FFF"
+			android:textSize="18dip" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_marginLeft="5dip"
+			android:layout_marginRight="5dip" />
+		<EditText android:id="@+id/password" android:password="true"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:layout_marginLeft="5dip" android:layout_marginRight="5dip" 
+			android:singleLine="true"/>
+		<TextView android:text="Email" android:textColor="#FFF"
+			android:textSize="18dip" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_marginLeft="5dip"
+			android:layout_marginRight="5dip" />
+		<EditText android:id="@+id/email" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:layout_marginLeft="5dip"
+			android:layout_marginRight="5dip" android:singleLine="true"/>
+			
+		<View android:layout_height="10dip" android:layout_width="wrap_content"></View>	
+		<TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:textSize="14dip" android:layout_marginLeft="5dip"
+			android:text="Please enter a question and answer that you can easily remember to help us verify your identity." />					
+		<View android:layout_height="10dip" android:layout_width="wrap_content"></View>
+					
+		<TextView android:text="Question" android:textColor="#FFF"
+			android:textSize="18dip"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_marginLeft="5dip"/>
+		<EditText android:id="@+id/security_question" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:layout_marginLeft="5dip"
+			android:layout_marginRight="5dip" android:singleLine="true"/>
+		<TextView android:text="Answer" android:textColor="#FFF"
+			android:textSize="18dip"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_marginLeft="5dip"/>				
+		<EditText android:id="@+id/security_answer" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:layout_marginLeft="5dip"
+			android:layout_marginRight="5dip" android:singleLine="true"/>
+		<LinearLayout android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:layout_marginLeft="5dip"
+			android:layout_marginRight="5dip">
+			<Button android:text="&#60;&#60;Back" android:id="@+id/signup_cancel_button"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+			<Button android:text="Register Me" android:id="@+id/signup_register_button"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+		</LinearLayout>
+	</LinearLayout>
+</ScrollView>

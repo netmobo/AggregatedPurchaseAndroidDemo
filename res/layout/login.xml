@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:orientation="vertical">
+		
+		<TextView android:layout_width="wrap_content"
+			android:textSize="12sp" android:layout_height="wrap_content"
+			android:text="This demo shows how you can add aggregated payments to your app with a prepaid account. In this demo app, additional features can be added as plug-ins. Each plug-in is available as a separate purchase that gets deducted from an initial prepaid balance." />
+		<View android:layout_height="20dip" android:layout_width="wrap_content"></View>
+		
+		<TextView android:layout_width="wrap_content"
+			android:textSize="12sp" android:textStyle="italic" android:layout_height="wrap_content"
+			android:text="Payments are made in a sandbox, with dummy payment accounts." />
+		<View android:layout_height="20dip" android:layout_width="wrap_content"></View>
+
+		<TextView android:layout_width="wrap_content"
+			android:textSize="20sp" android:layout_height="wrap_content"
+			android:text="Sign-in or create a new demo account" />
+		<View android:layout_height="20dip" android:layout_width="wrap_content"></View>
+	
+	<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_height="fill_parent" android:layout_width="fill_parent">		
+		<TableRow>
+			<TextView android:text="User Name:" android:width="120px" />
+			<EditText android:id="@+id/login_username" android:width="200px" android:singleLine="true"/>
+		</TableRow>
+		<TableRow>
+			<TextView android:text="Password:" />
+			<EditText android:id="@+id/login_password" android:password="true" android:singleLine="true"/>
+		</TableRow>
+		<TableRow>
+			<TextView />
+			<CheckBox android:id="@+id/login_remember_password"
+				android:text="Remember Password" />
+		</TableRow>
+		<TableRow>
+			<Button android:id="@+id/login_login_button" android:text="Log In" />
+			<Button android:id="@+id/login_signup_button" android:text="Create an account>>" />
+		</TableRow>
+	</TableLayout>
+	</LinearLayout>
+</ScrollView>

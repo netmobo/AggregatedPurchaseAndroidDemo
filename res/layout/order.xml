@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/RelativeLayout01" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+
+	<TextView android:layout_width="wrap_content" android:id="@+id/credits_textview"
+		android:layout_centerHorizontal="true" android:layout_marginTop="20dip"
+		android:layout_height="wrap_content" android:layout_alignParentTop="true"
+		android:text="How many credits?"></TextView>
+
+	<Spinner android:id="@+id/order_credits_spinner"
+		android:layout_width="wrap_content" android:layout_centerHorizontal="true"
+		android:layout_below="@+id/credits_textview" android:layout_height="wrap_content"></Spinner>
+
+	<RelativeLayout 
+		android:id="@+id/bottomRelativeLayout01" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+		
+		<Button android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="&#60;&#60;Back"
+			android:layout_centerHorizontal="true" 
+			android:id="@+id/order_back_button"></Button>
+	</RelativeLayout>
+</RelativeLayout>
+
+
